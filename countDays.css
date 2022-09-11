@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  height: 595px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: rgb(255, 139, 139);
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3 {
+  padding: 8px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #940303;
+  box-shadow: 1px 1px 20px #333;
+}
+.couple .couple__title h1 {
+  font-size: 150px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 12px #333;
+}
+
+.couple {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.couple .couple__lover {
+  width: 200px;
+}
+
+.couple .couple__lover .couple__img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.couple .couple__lover .couple__name {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: -2px -2px 4px black;
+}
+
+.couple .couple__lover .couple__zodiac {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #00ffe3;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0px 0px 4px #000;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.date-time .days,
+.hours,
+.minutes,
+.seconds {
+  position: relative;
+  width: 100%;
+  margin: 60px 20px;
+}
+.date-time p {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  width: 200px;
+  padding: 50px 0;
+  border-radius: 5px;
+  height: 150px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px #333;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.date-time p::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+.date-time .day,
+.hr,
+.mn,
+.sc {
+  width: 140px;
+  padding: 15px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 125px;
+  left: 30px;
+  box-shadow: 1px 1px 20px #333;
+}
+.firework-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bongbong {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  display: none;
+  background-color: #333;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+  }
+  .couple {
+    color: #fff;
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .couple .couple__lover {
+    width: 150px;
+  }
+  .couple .couple__lover .couple__img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .couple .couple__lover .couple__name {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: -2px -2px 4px black;
+    width: 140px;
+    font-size: 11px;
+  }
+  .couple .couple__lover .couple__zodiac {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #00ffe3;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 0px 0px 4px #000;
+  }
+  .couple .couple__title h1 {
+    font-size: 60px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 12px #333;
+    margin-left: 2px;
+  }
+  h3 {
+    padding: 8px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    display: inline-block;
+    letter-spacing: 0.5px;
+    color: #940303;
+    box-shadow: 1px 1px 20px #333;
+  }
+  .date-time {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .date-time p {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    width: 150px;
+    padding: 25px 0;
+    border-radius: 5px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #333;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .date-time .days,
+  .hours,
+  .minutes,
+  .seconds {
+    position: relative;
+    margin: 0 20px 60px;
+    width: 150px;
+  }
+  .date-time .day,
+  .hr,
+  .mn,
+  .sc {
+    width: 90px;
+    padding: 5px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    box-shadow: 1px 1px 20px #333;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 1023px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+  }
+  .couple {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .couple__lover {
+    width: 200px;
+  }
+  .couple .couple__title h1 {
+    font-size: 100px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 12px #333;
+  }
+  .date-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .date-time .days,
+  .hours,
+  .minutes,
+  .seconds {
+    position: relative;
+    margin: 20px 20px 60px;
+    width: 150px;
+  }
+  .date-time p {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    width: 150px;
+    padding: 25px 0;
+    border-radius: 5px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #333;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .date-time .day,
+  .hr,
+  .mn,
+  .sc {
+    width: 90px;
+    padding: 5px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 85px;
+    left: 30px;
+    box-shadow: 1px 1px 20px #333;
+  }
+}
+@media only screen and (max-width: 1288px) {
+}
